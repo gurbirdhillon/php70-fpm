@@ -43,7 +43,7 @@ RUN apt-get update \
 
 COPY www.conf /etc/php/7.0/fpm/pool.d/www.conf
 
-COPY php-ini-overrides.ini /etc/php/7.0/fpm/conf.d/99-overrides.ini
+# COPY php-ini-overrides.ini /etc/php/7.0/fpm/conf.d/99-overrides.ini
 
 RUN service php7.0-fpm restart
 
